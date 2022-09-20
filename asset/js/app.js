@@ -3,8 +3,8 @@ gsap.registerPlugin(TextPlugin);
 const h1="Web developper freelance basé en Côte d'Ivoire. Création de sites web sur mesure à des Tarifs abordables."
 window.addEventListener('load', () =>{
     
-
-    LT.to(".title", {duration: 2, text:h1})
+    let LT=gsap.timlines()
+    LT.to(".title", {duration: 2, text:h1, ease:"power2out"})
     
 })
 

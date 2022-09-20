@@ -7,7 +7,7 @@
 
 
 :root{
-    --textColor1:#e0dbdb;
+    --textColor1:#c0c0c0;
     --textColor2:#fff;
     --textOrHot:#da8c21;
     --textOrSky:rgb(222, 176, 76);
@@ -26,6 +26,8 @@ a{
 
 body{
     background-color:var(--bgColor) ;
+    display: flex;
+    flex-direction: column;
 }
 
 body *{
@@ -36,6 +38,9 @@ body *{
     color: var(--textColor2);
     
 }
+main{
+    flex-grow: 1;
+}
 
 /* header */
 .section-1{
@@ -43,7 +48,7 @@ background: linear-gradient(180deg, rgba(136, 134, 134, 0.5) 0%, rgba(14,21,22,0
 ;
 }
 .header-container{
-    height: 600px;
+    padding-bottom: 2rem;
     
 }
 
@@ -153,10 +158,18 @@ background: linear-gradient(180deg, rgba(136, 134, 134, 0.5) 0%, rgba(14,21,22,0
 .header-main{
     margin-top: 120px;
 }
-.header-main h1{
+.header-main h1, .header-main h1 span{
     font-size:4rem;
-    color: var(--textOrSky);
+    
     font-family: var(--fontHomeDesc);
+}
+
+.header-main h1{
+    color: var(--textColor2);
+}
+.header-main h1 span{
+    color: var(--textOrSky);
+
 }
 
 .header-footer{
@@ -166,6 +179,7 @@ background: linear-gradient(180deg, rgba(136, 134, 134, 0.5) 0%, rgba(14,21,22,0
 .header-footer a {
     display: flex;
     transition: all 0.3s;
+    overflow: hidden;
     
 }
 .header-footer a span{
@@ -201,11 +215,132 @@ background: linear-gradient(180deg, rgba(136, 134, 134, 0.5) 0%, rgba(14,21,22,0
     
 }
 
+section{
+    margin-top: 60px;
+}
+
+/* realisation */
+
+.realisation-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.realisation-content div{
+    margin-right: 2.5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.realisation-content .site_img_container label span{
+    
+    font-family: var(--fontHomeDesc);
+    font-weight: bold;
+    font-size: xx-large;
+}
+.realisation-content .site_img_container a{
+    margin-top: 1.5rem;
+}
+
+.realisation-content .site_img_container a, .realisation-content .site_img_container{
+   overflow: hidden;
+}
 
 
+.realisation-content .site_img_container a img{
+    width: 395px;
+    height:500px;
+}
+
+.realisation-content .site_img_container a:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
 
 
+.web_dev{
+    margin-top: 3rem;
+}
 
+.section_title, .section_title span{
+    font-size: 3rem;
+    
+    font-family: var(--fontHomeDesc);
+}
+
+.section_title{
+    margin-bottom: 1.5rem;
+    
+}
+.section_title span{
+    color: var(--textOrSky);
+}
+
+.section_text{
+    font-weight: lighter;
+    font-family: var(--fontNavlink);
+    font-size: 1.2rem;
+}
+
+
+footer {
+    width: 100%;
+    background-color: black;
+  }
+
+.logo-footer img{
+    width: 140px;
+    height: auto;
+}
+
+.footer-content{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-content div{
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.footer-content div .div-content{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-content div .div-content.log{
+    margin-top: 0.5rem;
+}
+
+.footer-content div .div-header{
+    font-family: var(--fontHomeDesc);
+    color: var(--textOrSky);
+    font-size: 1.3rem;
+}
+
+.footer-content div .div-content a{
+    font-family: var(--fontNavlink);
+    color: var(--textColor1);
+    margin-bottom:0.4rem;
+    transition: all 0.4s;
+}
+.footer-content div .div-content a:hover{
+    text-decoration: none;
+    color: var(--textColor2);
+}
+.copyright-content{
+    margin-bottom: 2rem;
+}
+footer .copyright{
+    font-size: small;
+}
 /* responsive */
 @media screen and (max-width:1057px) {
 
