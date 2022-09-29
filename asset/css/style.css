@@ -12,6 +12,7 @@
     --textOrHot:#da8c21;
     --textOrSky:rgb(222, 176, 76);
     --bgColor:rgb(14, 21, 22);
+    --bginputColor:rgb(31, 32, 32);
 
     --fontHomeDesc:'Dancing Script', cursive;
     --fontNavlink: 'Roboto', sans-serif;
@@ -36,7 +37,7 @@ body *{
     overflow-x: hidden;
     box-sizing: border-box;
     color: var(--textColor2);
-    
+    font-family: var(--fontNavlink);
 }
 main{
     flex-grow: 1;
@@ -45,12 +46,14 @@ main{
 /* header */
 .section-1{
 background: linear-gradient(180deg, rgba(136, 134, 134, 0.5) 0%, rgba(14,21,22,0.95) 30%), url(../img/bg/bg2.jpg) no-repeat center center / cover;
-;
+
+
 }
+
 .header-container{
-    padding-bottom: 2rem;
-    
+    overflow-y: hidden;
 }
+
 
 .nav-logo img{
     position: absolute;
@@ -64,11 +67,16 @@ background: linear-gradient(180deg, rgba(136, 134, 134, 0.5) 0%, rgba(14,21,22,0
     padding-top:2rem;
     display: flex;
     justify-content: space-between;
+    overflow: visible;
+    position: relative;
+    z-index: 1000;
 }
 .nav-container ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
+    overflow: visible;
+    
     
 }
 
@@ -96,7 +104,7 @@ background: linear-gradient(180deg, rgba(136, 134, 134, 0.5) 0%, rgba(14,21,22,0
 
 .navParent{
     cursor: pointer;
-    
+    overflow: visible;
 }
 
 
@@ -106,9 +114,7 @@ background: linear-gradient(180deg, rgba(136, 134, 134, 0.5) 0%, rgba(14,21,22,0
 
 .navParent div{
     display: none;
-    
 }
-
 .navParent div ul{
     display: flex;
     flex-direction: column;
@@ -144,7 +150,8 @@ background: linear-gradient(180deg, rgba(136, 134, 134, 0.5) 0%, rgba(14,21,22,0
     background-color: var(--textColor2);
     position: absolute;
     transform: translateY(20px);
-    z-index: 20;
+    z-index: 1000;
+    width: 200px;
 }
 
 .menu-icon{
@@ -157,9 +164,12 @@ background: linear-gradient(180deg, rgba(136, 134, 134, 0.5) 0%, rgba(14,21,22,0
 
 .header-main{
     margin-top: 120px;
+    
 }
 .header-main h1, .header-main h1 span{
     font-size:4rem;
+    position: relative;
+    z-index: -1;
     
     font-family: var(--fontHomeDesc);
 }
@@ -216,7 +226,7 @@ background: linear-gradient(180deg, rgba(136, 134, 134, 0.5) 0%, rgba(14,21,22,0
 }
 
 section{
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 /* realisation */
@@ -261,8 +271,8 @@ section{
 }
 
 
-.web_dev{
-    margin-top: 3rem;
+.web_dev *, .about *{
+    overflow: hidden;
 }
 
 .section_title, .section_title span{
@@ -272,7 +282,7 @@ section{
 }
 
 .section_title{
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     
 }
 .section_title span{
@@ -303,8 +313,10 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.footer-content div{
+
+.footer-content .one_part, .footer-content .two_part, .footer-content .three_part{
     display: block;
+    position: relative;
     margin-bottom: 2rem;
 }
 
@@ -341,6 +353,118 @@ footer {
 footer .copyright{
     font-size: small;
 }
+
+#contact, #social-network{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-header, #contact .section-header span{
+    color: var(--textOrSky);
+    font-size: 3rem;
+    font-family: var(--fontHomeDesc);
+}
+
+.diffrent-contact{
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+}
+.diffrent-contact .contact-item-div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding: 1rem 2rem;
+}
+.contact-item-div.middle{
+    border:none;
+    border-left: 2px solid var(--textOrSky);
+    border-right: 2px solid var(--textOrSky);
+}
+
+.contact-item-div i{
+    color:var(--textOrSky);
+    font-size:2rem;
+    margin-bottom: 0.3rem;
+}
+.contact-item-div label{
+    color:var(--textOrSky);
+    margin-bottom: 1rem;
+}
+
+.contact-item-div span{
+    font-size: 0.8;
+}
+
+.desc{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.contact-form div{
+    display: block;
+    margin-bottom: 1rem;
+    
+}
+.contact-form div label{
+    font-size: 0.8rem;
+}
+
+.contact-form div input, .contact-form div textarea{
+    background-color:var(--bginputColor) ;
+    width: 100%;
+    
+    border: none;
+    outline: none;
+    padding: 0 0.5rem;
+}
+.contact-form div input{
+    height: 2.2rem;
+}
+.btn-goldSky{
+    background-color: var(--textOrSky);
+    color: var(--bginputColor);
+    border: none;
+    transform: all 0.4s;
+}
+
+.btn-goldSky:hover{
+    background-color: var(--bginputColor);
+    color:var(--textOrSky) ;
+    border: 1.5px solid var(--textOrSky);
+}
+#social-network{
+    margin-top: 2rem;
+}
+
+#social-network .section-header{
+    margin-bottom: 0.8rem;
+}
+#social-network div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#social-network div i{
+    font-size: 2rem;
+    color: var(--textOrSky);
+    margin-right: 1rem;
+}
+.map-content{
+    align-items: center;
+    margin: 2rem 0;
+}
+.map-content, .map{
+    width: 100%;
+}
+
 /* responsive */
 @media screen and (max-width:1057px) {
 
