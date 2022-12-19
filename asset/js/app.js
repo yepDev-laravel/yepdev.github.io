@@ -1,5 +1,14 @@
 //gsap animation loader
 
+$(document).ready(function() {
+
+    $(".menu-icon .fa-bars").click(function (e) { 
+        e.preventDefault();
+        $(".nav-bar").toggleClass("menu-mobile");
+    });
+});
+
+
 gsap.registerPlugin(ScrollTrigger);
 window.addEventListener('load', () =>{
     
@@ -77,9 +86,9 @@ TL.from(".one_part",{
     duration:1,x:-80 ,opacity:0, ease:"elastic.out"
 }).from(".three_part",{
     duration:1,x:80 ,opacity:0, ease:"elastic.out"
-}, "-=1").from(".copyright-content",{duration:1,opacity:0, ease:"power2.out"},"-=0.5").from(
-    {duration:1,opacity:0, ease:"power2.out"},"-=0.3"
-)
+}, "-=1").from(".copyright-content",{duration:1,opacity:0, ease:"power2.out"},"-=0.5")
+
+
 
 
 

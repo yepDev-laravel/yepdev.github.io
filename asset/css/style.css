@@ -55,10 +55,9 @@ background: linear-gradient(180deg, rgba(136, 134, 134, 0.5) 0%, rgba(14,21,22,0
 }
 
 
-.nav-logo img{
+.nav-logo h1{
     position: absolute;
-    height: 70px;
-    width: auto;
+    font-family: var(--fontHomeDesc);
     transform: translateY(-22px);
     z-index: 15;
 }
@@ -81,8 +80,10 @@ background: linear-gradient(180deg, rgba(136, 134, 134, 0.5) 0%, rgba(14,21,22,0
 }
 
 .nav-container ul li{
+    
     margin-right: 1rem; 
     padding-bottom: 20px;
+   
     
     
 }
@@ -150,8 +151,10 @@ background: linear-gradient(180deg, rgba(136, 134, 134, 0.5) 0%, rgba(14,21,22,0
     background-color: var(--textColor2);
     position: absolute;
     transform: translateY(20px);
-    z-index: 1000;
-    width: 200px;
+    
+    width: 250px;
+    height: 280px;
+    overflow-y:hidden;
 }
 
 .menu-icon{
@@ -301,9 +304,10 @@ footer {
     background-color: black;
   }
 
-.logo-footer img{
-    width: 140px;
-    height: auto;
+.logo-footer h2{
+    font-size: 2rem;
+    font-family: var(--fontHomeDesc);
+    color: var(--textOrSky);
 }
 
 .footer-content{
@@ -395,7 +399,7 @@ footer .copyright{
 }
 
 .contact-item-div span{
-    font-size: 0.8;
+    font-size: 1rem;
 }
 
 .desc{
@@ -500,17 +504,31 @@ footer .copyright{
         font-size: 1.3rem;
         
     }
+    .menu-icon{
+        display: block;
+        position: absolute;
+        transform: translateY(-28px);
+        cursor: pointer;
+        right: 100px;
+        padding-top:2rem;
+        z-index: 1000;
+
+    }
+
     .nav-bar{
         transform: translateX(100%);
         transition: all 0.5s;
     }
 
     .nav-bar.menu-mobile{
+        position: fixed;
+        width: 100%;
         transform: translateX(0%);
     }
 
     .navParent{
         cursor: pointer;
+        position: relative;
         font-size: 1.3rem;
         
     }
@@ -525,22 +543,22 @@ footer .copyright{
         border-radius: 5px;
         background-color: var(--textColor2);
         justify-content: flex-start;
+        z-index: 1000;
+        
         
         
   
     }
 
-
-    .menu-icon{
+    .navParent:hover div{
+        transition: all 0.4s;
         display: block;
+        background-color: var(--textColor2);
         position: absolute;
-        transform: translateY(-28px);
-        cursor: pointer;
-        right: 100px;
-        padding-top:2rem;
-        z-index: 15;
-
+        transform: translate(42%,-11%);
+         
     }
+    
 
     .header-main h1{
         font-size:3rem;
@@ -549,6 +567,19 @@ footer .copyright{
         font-family: var(--fontHomeDesc);
     }
     
+    .contact-item-div i{
+        color:var(--textOrSky);
+        font-size:1.5rem;
+        margin-bottom: 0.2rem;
+    }
+    .contact-item-div label{
+        color:var(--textOrSky);
+        margin-bottom: 0.8rem;
+    }
+    
+    .contact-item-div span{
+        font-size: 0.8rem;
+    }
 
 }
 
@@ -567,16 +598,35 @@ footer .copyright{
 
     }
 
-    .nav-logo img{
+    .nav-logo h1{
         
-        height: 50px;
-        width: auto;
+        font-family: var(--fontHomeDesc);
         transform: translateY(-7px);
         
     }
     
     .menu-icon i{
         font-size: 1.3rem;
+    }
+
+    .contact-item-div.middle{
+        
+        border-left:none;
+        border-right:none;
+    }
+    
+    .contact-item-div i{
+        color:var(--textOrSky);
+        font-size:2rem;
+        margin-bottom: 0.3rem;
+    }
+    .contact-item-div label{
+        color:var(--textOrSky);
+        margin-bottom: 1rem;
+    }
+    
+    .contact-item-div span{
+        font-size: 1rem;
     }
 
 }
