@@ -93,7 +93,7 @@ background: linear-gradient(180deg, rgba(136, 134, 134, 0.5) 0%, rgba(14,21,22,0
     font-family: var(--fontNavlink);
     
 }
-.nav-container ul li:hover a{
+.nav-container ul li:hover a, .nav-container ul li a.active{
     border-bottom:solid var(--textColor1) 1px;
     color: var(--textColor1);
 }
@@ -280,6 +280,7 @@ section{
 
 .section_title, .section_title span{
     font-size: 3rem;
+    margin-left: 0.3rem;
     
     font-family: var(--fontHomeDesc);
 }
@@ -293,6 +294,7 @@ section{
 }
 
 .section_text{
+    margin-left: 0.3rem;
     font-weight: lighter;
     font-family: var(--fontNavlink);
     font-size: 1.2rem;
