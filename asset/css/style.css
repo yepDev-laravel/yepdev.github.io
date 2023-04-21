@@ -10,7 +10,7 @@
     --textColor1:#c0c0c0;
     --textColor2:#fff;
     --textOrHot:#da8c21;
-    --textOrSky:rgb(222, 176, 76);
+    --textOrSky:#f2914e;
     --bgColor:rgb(14, 21, 22);
     --bginputColor:rgb(31, 32, 32);
 
@@ -55,11 +55,9 @@ background: linear-gradient(180deg, rgba(136, 134, 134, 0.5) 0%, rgba(14,21,22,0
 }
 
 
-.nav-logo h1{
-    position: absolute;
-    font-family: var(--fontHomeDesc);
-    transform: translateY(-22px);
-    z-index: 15;
+.logo{
+    width: 100px;
+    height: auto;
 }
 
 .nav-container{
