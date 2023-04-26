@@ -1,208 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
-    <link rel="stylesheet" href="asset/css/style.css">
-
-    <title>Accueil </title>
-</head>
-<body>
-    <header>
-        <div class="container-fluid section-1">
-            <div class="row">
-                <div class="col-1 col-md-2"></div>
-                <div class="col-10 col-md-8">
-                    <div class="header-container">
-                        
-                        <div class="nav-container">
-                            <a href="index.html" class="nav-logo">
-                                <img class="logo" src="./asset/img/logopn.png"></a>
-                            <ul class="nav-bar">
-                                <li class="navItem"><a href="#realisation" class="navLink">realisations</a></li>
-                                <li class="navItem navParent">Services
-                                    <i class="fa-solid fa-angle-down"></i>
-                                    <div class="sub-menu1">
-                                        <ul >
-                                            <li class="navItem1">
-                                                <a href="" class="navLink">Creation de site web</a>
-                                            </li>
-                                            <li class="navItem1">
-                                                <a href="" class="navLink">Creation d'appli web</a>
-                                            </li>
-                                            <li class="navItem1">
-                                                <a href="" class="navLink">Creation de logiciel(windows, mac, linux)</a>
-                                            </li>
-                                            <li class="navItem1">
-                                                <a href="" class="navLink">SEO</a>
-                                            </li>
-                                            <li class="navItem1">
-                                                <a href="" class="navLink">Referencement Google</a>
-                                            </li>
-                                            <li class="navItem1"><a href="" class="navLink">Autre</a>
-                                            </li>
-                                        </ul>
-                                        
-                                        
-                                    </div>
-                                </li>
-                                <li class="navItem"><a href="about.html" class="navLink">A propos</a></li>
-                                <li class="navItem"><a href="" class="navLink">Tarifs</a></li>
-                                <li class="navItem"><a href="contact.html" class="navLink navContact">Contactez-nous</a></li>
-                            </ul>
-                              
-                        </div>
-                        <div class="menu-icon">
-                            <i class="fa-solid fa-bars"></i>
-                        </div>
-                        
-                        <div class="header-main">
-                            <h1 class="title"><span>Transformez votre entreprise</span> en un géant avec <span>CyberGenius Consulting</span>.</h1>
-                        </div>
-                        <div class="header-footer">
-                            <a href="#realisation"><span class="arrow-circle"><i class="fa-solid fa-arrow-down"></i></span><spam class="arrow-label">Voir mon travail</spam></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1 col-md-2"></div>
-            </div>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Agency - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="./js/preloader.js" defer></script>
+    </head>
+    <body id="page-top">
+        <div class="preloader">
+            <img class="logo" src="./assets/img/logopn.png">
         </div>
-
-    </header>
-    <main>
-        <section class="container-fluid" id="realisation">
-            <div class="row">
-                <div class="col-1 col-md-2"></div>
-                <div class="col-10 col-md-8 realisation-content">
-                    <div class="site_img_container left-realisation"><label for="">
-                        <span>ecommerce website</span></label>
-                        <a href="" class="img_site"><img src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/2659/posts/26768/image/Suprema%20-%20Multipurpose%20eCommerce%20Theme.jpg" alt="ecommerce website"></a>
-                    </div>
-                    <div class="site_img_container right-realisation">
-                        <label for=""><span>blog</span></label>
-                        <a href="" class="img_site"><img src="https://www.templateonweb.com/upload/web/templates/screenshots/thumbnails_800/54-blog-site-template-home-page.jpg" alt="blog"></a>
-                    </div>
-                    <div class="site_img_container left-realisation">
-                        <label for=""><span>landing page</span></label>
-                        <a href="" class="img_site"><img src="https://salesdorado.com/wp-content/uploads/2020/04/thinkific.png" alt="landing page"></a>
-                    </div>
-                    <div class="site_img_container right-realisation end-realisation">
-                        <label for=""><span>web app</span></label>
-                        <a href="" class="img_site"><img src="https://adminlte.io/cdn-cgi/image/quality=80,format=auto,onerror=redirect,metadata=none/wp-content/uploads/2021/06/html-dashboard-template.jpg" alt="web app"></a>
-                    </div>
-                    
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><h1>CyberGenius C.</h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Nos realisations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">A propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Equipe</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Localisation</a></li>
+                    </ul>
                 </div>
-                <div class="col-1 col-md-2"></div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Création de Sites et applications Web Sur Mesure!</div>
+                <div class="masthead-heading text-uppercase">Du Concept à La Réalité </div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Contactez-nous</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Services</h2>
+                    <h3 class="section-subheading text-muted">Profitez de nos services de qualité à des prix accessibles.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">E-Commerce</h4>
+                        <p class="text-muted">Nous concevons des sites web uniques, adaptés à vos besoins et à ceux de votre entreprise. Notre équipe expérimentés travaille en collaboration avec vous pour créer un site e-commerce qui mettra en valeur votre marque et augmentera vos ventes.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Site Vitrine</h4>
+                        <p class="text-muted">Vous cherchez à créer un site vitrine sur mesure pour votre entreprise ? Ne cherchez plus ! Nous sommes là pour vous aider. Nous proposons des services de création de sites vitrines sur mesure à des prix abordables.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-clipboard-list fa-stack-1x fa-inverse"></i>
+                            
+                        </span>
+                        <h4 class="my-3">Application de Gestion en Ligne</h4>
+                        <p class="text-muted">Nous mettons l'accent sur la qualité de notre travail tout en offrant des prix abordables pour répondre à vos besoins. </p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fab fa-windows fa-stack-1x fa-inverse"></i>
+                            
+                            
+                        </span>
+                        <h4 class="my-3">Application Desktop</h4>
+                        <p class="text-muted">Vous cherchez à créer une application de bureau pour votre entreprise ? Nous sommes là pour vous aider ! Nous proposons des services de développement d'applications de bureau personnalisées pour tous types de projets.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-thumbs-up fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Gestion Réseau Social</h4>
+                        <p class="text-muted">Vous voulez développer votre présence sur les réseaux sociaux et augmenter vos ventes mais vous ne savez pas par où commencer ? Nous sommes là pour vous aider ! </p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fab fa-google fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Référencement Google</h4>
+                        <p class="text-muted">Vous voulez améliorer votre visibilité en ligne et atteindre une audience plus large ? Contactez-nous ! Nous proposons des services de référencement Google pour votre site web. </p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="web_dev container-fluid">
-            <div class="row">
-                <div class="col-1 col-md-2"></div>
-                <div class="col-10 col-md-8">
-                    <h3 class="section_title first">Pas seulement <span>la conception</span>  et le développement. Je peux également aider avec  <span>le référencement naturel (SEO)</span> ,<span>Google Ads</span> et <span>Google Mybusiness</span></h3>
-                    <div class="section_text first">
-                        <p>
-                        Après 2 ans de travail dans l'industrie de la conception et du développement Web, j'ai travaillé avec d'excellents spécialistes du marketing qui m'ont transmis leurs compétences. J'ai appliqué ces compétences à de nombreux projets, comme aider les petits clients à mettre en place une stratégie de référencement pour atteindre des classements plus élevés ou créer une stratégie Adwords qui génère un excellent retour sur investissement. En tant que concepteur Web avec une expérience en marketing, j'apprendrai à vous connaître, vous et votre marque, en travaillant avec vous pour m'assurer que votre site Web a les meilleures pratiques de référencement.</p> <br>
-
-                    <p class="end-web-dev">Si vous êtes un propriétaire d'entreprise occupé et que vous souhaitez simplement confier la progression et le développement de votre site Web à quelqu'un, je propose des forfaits de maintenance de site Web à partir de 100 € (65 000 francs CFA) par mois, ce qui garantit que votre site Web est ultra rapide et sécurisé. et toujours à jour. Je vous conseillerai également sur la façon d'utiliser le site Web de votre entreprise pour obtenir de meilleurs résultats et pousser votre entreprise à être à la pointe de la technologie - ce qui plaira à vos clients.</p>
-                    </div>
-
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Nos Réalisations</h2>
+                    <h3 class="section-subheading text-muted">Visualisez Notre Travail.</h3>
                 </div>
-                <div class="col-1 col-md-2"></div>
-            </div>
-        </section>
-        <section class="about container-fluid">
-            <div class="row">
-                <div class="col-1 col-md-2"></div>
-                <div class="col-10 col-md-8">
-                    <h3 class="section_title second">
-                        Basé en <span>Côte d'Ivoire</span>, spécialisé dans<span> le Web Design</span> , <span>le Développement Web & le Marketing</span>.
-                        
-                    </h3>
-                    <div class="section_text second">
-                        
-                        <p>Salut, je suis Yepdev. Concepteur et développeur Web professionnel basé en Côte d'Ivoire, j'ai passé les 3 dernières années à fournir des solutions de conception et de développement percutantes pour un large éventail d'entreprises - des petits aux moyens noms nationaux comme Lymaz, Kntraiteur ou Pierre Angulaire Estate. J'apporte ma richesse d'expérience à des clients dans le pays et dans le monde. J'aborde chaque nouveau projet avec une boîte à outils complète d'idées et une nouvelle approche de vos besoins. Que vous recherchiez une conception Web ou que vous recherchiez un ensemble complet de conception, de développement et de marketing, quelle que soit la taille du projet, je veillerai à ce qu'il soit mis en place pour réussir.</p><br>
-
-                        <p class="about-text-middle">Du café au déploiement, ma priorité est de bien comprendre les exigences de votre projet, et nous pouvons discuter de votre projet autour d'un café informel ou sur Skype/Whatsapp, selon ce qui vous convient le mieux. Une fois tous les objectifs de la mission confirmés, une proposition sera conçue, détaillant votre package de projet exact. Une fois la proposition acceptée, nous commencerons à créer votre projet.</p><br>
-
-                        <p>La taille n'a pas d'importance ! Mon objectif est de fournir d'excellents résultats avec des projets Web ou d'applications indépendants de toutes tailles. Entreprise multi-usines ou PME flambant neuve, tous les projets sont nourris avec le même traitement affectueux. Lorsqu'un projet est déployé, mon objectif est que chaque client soit complètement ravi de son produit final. En règle générale, je vise l'excellence dans tous les briefs.</p>
-                    </div>
-                </div>
-                <div class="col-1 col-md-2"></div>
-            </div>
-        </section>
-        <section class="join_me container-fluid">
-
-        </section>
-
-    </main>
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-1 col-md-2"></div>
-                <div class="col-10 col-md-8">
-                    <div class="footer-content">
-                        <div class="one_part">
-                            <a href="#" class="logo-footer"><h2>yepDev</h2></a>
-                            <div class="div-content log">
-                                <a href="#realisation">Réalisation</a>
-                                <a href="about.html">A propos</a>
-                                <a href="">Tarifs</a>
-                                <a href="contact.html">Contact</a>
-                            </div>
-                        </div>
-                        <div class="two_part"> 
-                            <h4 class="div-header">+225 0748 301 344</h4>
-                            <div class="div-content">
-                                <a href="">Développeur web</a>
-                                <a href="">Désigner web</a>
-                                <a href="">SEO & référencement google</a>
-                                <a href="">Maintenance & consulting</a>
-                            </div>
-                        </div>
-                        <div class="three_part">
-                            <h4 class="div-header">yepiengesso@gmail.com</h4>
-                            <div class="div-content">
-                                <a href="https://www.linkedin.com/in/ngesso-enoc-daniel-y%C3%A9pie/">Linkedin</a>
-                                <a href="">Twitter</a>
-                                <a href="https://github.com/yepDev-laravel">Github</a>
-                                <a href="https://www.youtube.com/channel/UCtQyCXynNEGuQARXCYyJw2A" target="_blank">Youtube</a>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://i.pinimg.com/564x/de/c3/10/dec31047484db66e91aa0622e714876e.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">E-commerce</div>
+                                <div class="portfolio-caption-subheading text-muted">Vente</div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/22b904136232057.61f5c6d5b0946.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Site Vitrine</div>
+                                <div class="portfolio-caption-subheading text-muted">Web Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://i.pinimg.com/564x/e7/63/c2/e763c2582986553f8ab96ec613932095.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Site Pour Entreprise</div>
+                                <div class="portfolio-caption-subheading text-muted">Service</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://i.pinimg.com/564x/e4/3d/8d/e43d8d33c0c56566b9dbf6a05b04524e.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Application De gestion en ligne</div>
+                                <div class="portfolio-caption-subheading text-muted">Administration</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://i.pinimg.com/564x/45/96/dc/4596dc25604a73c3da8eed16853c5caf.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Site de Vente</div>
+                                <div class="portfolio-caption-subheading text-muted">E-commerce</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://i.pinimg.com/564x/f3/8d/ed/f38ded790b8ab7239df8d899702b7d9f.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Site Pour Salon De Coiffure</div>
+                                <div class="portfolio-caption-subheading text-muted">Barber Shop</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-1 col-md-2"></div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">A propos De Nous</h2>
+                    <h3 class="section-subheading text-muted">Prenez le temps de découvrir qui nous sommes vraiment.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">Qui Sommes-Nous?</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">Nos engagements</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">En quoi sommes-nous different des autres?</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">L'importance de Nos Services</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Ecrivons
+                                <br />
+                                L'avenir
+                                <br />
+                                Ensemble!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Notre Incroyable Equipe</h2>
+                    <h3 class="section-subheading text-muted">Les Artisans De Votre Satisfaction.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                            <h4>Noel Aka</h4>
+                            <p class="text-muted">Chef De Projet</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <h4>Tresor Florian</h4>
+                            <p class="text-muted">Responsable Marketing</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <h4>Daniel Yepie</h4>
+                            <p class="text-muted">Dévéloppeur</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Nous sommes une équipe dynamique et expérimentée, passionnée par l'innovation et la création de solutions pour répondre aux besoins de nos clients.</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-->
+        <div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-1 col-md-2"></div>
-                <div class="col-10 col-md-8 copyright-content">
-                    <a  href="https://github.com/yepDev-laravel" class="copyright">Dévéloppé et Designé par © copyright 2022 YepDev.</a>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contactez-Nous</h2>
+                    <h3 class="section-subheading text-muted">N'hésitez pas à nous contacter si vous avez des questions ou des préoccupations.</h3>
                 </div>
-                <div class="col-1 col-md-2"></div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Votre Nom & Prenom *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">Veillez entrer votre Nom & Prenom.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Votre Email *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">Veillez entrer votre Email.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">l'Email entré n'est pas valide.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="225054830134" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">Veillez entrer votre Numero de téléphone.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Votre Message *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Veillez entrer votre message.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Message envoyé avec succes!</div>
+                            
+                            <br />
+                            
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Envoyer</button></div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; CyberGenius Consulting 2023</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Police de Confidantialité</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terme d'utilisation</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">E-commerce</h2>
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="https://i.pinimg.com/564x/de/c3/10/dec31047484db66e91aa0622e714876e.jpg" alt="..." />
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/TextPlugin.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" ></script>
-
-    <script src="asset/js/app.js"></script>
-   
-</body>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Site Vitrine de Nouriture</h2>
+                                    <img class="img-fluid d-block mx-auto" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/22b904136232057.61f5c6d5b0946.jpg" alt="..." />
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Site Pour Entreprise</h2>
+                                    <img class="img-fluid d-block mx-auto" src="https://i.pinimg.com/564x/e7/63/c2/e763c2582986553f8ab96ec613932095.jpg" alt="..." />
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Application de gestion en ligne</h2>
+                                    <img class="img-fluid d-block mx-auto" src="https://i.pinimg.com/564x/e4/3d/8d/e43d8d33c0c56566b9dbf6a05b04524e.jpg" alt="..." />
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Site De Vente</h2>
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="https://i.pinimg.com/564x/45/96/dc/4596dc25604a73c3da8eed16853c5caf.jpg" alt="..." />
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Site pour Salon De Coiffure</h2>
+                                    <img class="img-fluid d-block mx-auto" src="https://i.pinimg.com/564x/f3/8d/ed/f38ded790b8ab7239df8d899702b7d9f.jpg" alt="..." />
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
