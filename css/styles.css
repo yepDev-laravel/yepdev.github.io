@@ -91,6 +91,7 @@
   box-sizing: border-box;
 }
 
+.row iframe{width: 100%;}
 .preloader{
   position:fixed;
   background-color: #fff;
